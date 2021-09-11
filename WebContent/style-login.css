@@ -1,0 +1,146 @@
+*{
+	margin: 0px;
+	font-family: fira sans;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 20px;
+	overflow-x: hidden;
+}
+
+header{
+	background-image: url('assets/img/8.jpg');
+	background-size:cover;
+	height:100vh ;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+    overflow: hidden;
+    /*background-color: #333;*/
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.logo
+{
+	height: 80px;
+	float: left;
+}
+
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.rowflix{
+
+	color: black;
+	padding: 15px;
+}
+
+
+
+.box{
+	font-family: fira sans;
+	border: none;
+	position: absolute;
+	top: 50%;
+	color: white;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	padding:40px;
+	background:rgba(0,0,0,0.8);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+	border-radius: 10px;
+}
+
+.box h2{
+	margin: 0 0 30px;
+	padding: 0;
+	color: #FFF;
+	text-align: center;
+}
+
+.box .inputbox
+{
+	position: relative;
+}
+
+.box .inputbox input{
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #FFF;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+	border:none;
+	border-bottom:  1px solid #FFF;
+	outline: none;
+	background: transparent;
+}
+
+.box .inputbox label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #FFF;
+	letter-spacing: 2px;
+	pointer-events: none;
+	transition: 0.5s;
+}
+
+.box .inputbox input:focus ~ label,
+.box .inputbox input:valid ~ label
+{
+	top: -18px;
+	left: 0;
+	color: #03A9F4;
+	font-size: 12px;
+}
+
+.box input[type="submit"]
+{
+	background: transparent;
+	border:none;
+	outline: none;
+	margin-top: 20px;
+	color: #FFF;
+	background: #03A9F4;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.box input[type="submit"]:hover{
+	opacity: 0.8;
+}
